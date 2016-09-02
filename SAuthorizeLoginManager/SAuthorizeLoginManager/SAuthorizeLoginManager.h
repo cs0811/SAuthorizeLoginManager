@@ -14,7 +14,7 @@ typedef NS_ENUM(NSInteger, SAuthorizeLoginType) {
     SAuthorizeLoginType_Sina ,
 };
 
-typedef void(^SAuthorizeLoginCompletionBlock)(NSDictionary * dic);
+typedef void(^SAuthorizeLoginCompletionBlock)(NSDictionary * dic, NSString * error);
 
 @interface SAuthorizeLoginManager : NSObject
 

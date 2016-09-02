@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef void(^AuthorizeLoginCompletionBlock)(NSDictionary * dic);
+typedef void(^AuthorizeLoginCompletionBlock)(NSDictionary * dic, NSString * error);
 
 @interface SAuthorizeLoginBaseHandle : NSObject
 
