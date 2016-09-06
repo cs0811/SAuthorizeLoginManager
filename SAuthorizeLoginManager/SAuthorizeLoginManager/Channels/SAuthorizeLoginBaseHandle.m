@@ -18,4 +18,8 @@
     
 }
 
++ (void)loginHandleOpenURL:(NSURL *)url completion:(AuthorizeLoginCompletionBlock)completion {
+    
+}
+
 @end

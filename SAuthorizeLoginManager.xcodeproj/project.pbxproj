@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D43D95191D7E9DD90046D4AC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D43D95181D7E9DD90046D4AC /* libstdc++.tbd */; };
+		D43D951B1D7EADEE0046D4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D951A1D7EADEE0046D4AC /* AppDelegate.m */; };
 		D443AD741D7961F0005832C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D443AD731D7961F0005832C2 /* main.m */; };
-		D443AD771D7961F0005832C2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D443AD761D7961F0005832C2 /* AppDelegate.m */; };
 		D443AD7A1D7961F0005832C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D443AD791D7961F0005832C2 /* ViewController.m */; };
 		D443AD7D1D7961F0005832C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D443AD7B1D7961F0005832C2 /* Main.storyboard */; };
 		D443AD7F1D7961F0005832C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D443AD7E1D7961F0005832C2 /* Assets.xcassets */; };
@@ -35,10 +36,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D43D95171D7E9B210046D4AC /* SAuthorizeLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAuthorizeLoginInfo.h; sourceTree = "<group>"; };
+		D43D95181D7E9DD90046D4AC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
+		D43D951A1D7EADEE0046D4AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D443AD6F1D7961F0005832C2 /* SAuthorizeLoginManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAuthorizeLoginManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D443AD731D7961F0005832C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D443AD751D7961F0005832C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D443AD761D7961F0005832C2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D443AD781D7961F0005832C2 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		D443AD791D7961F0005832C2 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		D443AD7C1D7961F0005832C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -88,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D43D95191D7E9DD90046D4AC /* libstdc++.tbd in Frameworks */,
 				D443ADBE1D7963A7005832C2 /* libsqlite3.tbd in Frameworks */,
 				D443ADBC1D7963A0005832C2 /* libc++abi.tbd in Frameworks */,
 				D443ADBA1D796398005832C2 /* libz.tbd in Frameworks */,
@@ -110,6 +114,7 @@
 		D443AD661D7961F0005832C2 = {
 			isa = PBXGroup;
 			children = (
+				D43D95181D7E9DD90046D4AC /* libstdc++.tbd */,
 				D443ADBD1D7963A7005832C2 /* libsqlite3.tbd */,
 				D443ADBB1D7963A0005832C2 /* libc++abi.tbd */,
 				D443ADB91D796398005832C2 /* libz.tbd */,
@@ -138,7 +143,7 @@
 			children = (
 				D443AD891D7962A9005832C2 /* SAuthorizeLoginManager */,
 				D443AD751D7961F0005832C2 /* AppDelegate.h */,
-				D443AD761D7961F0005832C2 /* AppDelegate.m */,
+				D43D951A1D7EADEE0046D4AC /* AppDelegate.m */,
 				D443AD781D7961F0005832C2 /* ViewController.h */,
 				D443AD791D7961F0005832C2 /* ViewController.m */,
 				D443AD7B1D7961F0005832C2 /* Main.storyboard */,
@@ -164,6 +169,7 @@
 				D443AD8A1D7962A9005832C2 /* Channels */,
 				D443ADBF1D7963D9005832C2 /* SAuthorizeLoginManager.h */,
 				D443ADC01D7963D9005832C2 /* SAuthorizeLoginManager.m */,
+				D43D95171D7E9B210046D4AC /* SAuthorizeLoginInfo.h */,
 			);
 			path = SAuthorizeLoginManager;
 			sourceTree = "<group>";
@@ -322,8 +328,8 @@
 			files = (
 				D443AD7A1D7961F0005832C2 /* ViewController.m in Sources */,
 				D443ADC41D796527005832C2 /* SAuthorizeLoginBaseHandle.m in Sources */,
+				D43D951B1D7EADEE0046D4AC /* AppDelegate.m in Sources */,
 				D443ADC11D7963D9005832C2 /* SAuthorizeLoginManager.m in Sources */,
-				D443AD771D7961F0005832C2 /* AppDelegate.m in Sources */,
 				D443AD741D7961F0005832C2 /* main.m in Sources */,
 				D443ADCA1D796598005832C2 /* SAuthorizeLoginHandle_QQ.m in Sources */,
 			);
@@ -450,6 +456,10 @@
 					"$(PROJECT_DIR)/SAuthorizeLoginManager/SAuthorizeLoginManager/Channels/Sina/libWeiboSDK",
 					"$(PROJECT_DIR)/SAuthorizeLoginManager/SAuthorizeLoginManager/Channels/WX/WXSDK",
 				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.suncloud.wedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "032e2d3a-ee02-40ce-bb70-1af59d58da0e";
@@ -472,6 +482,10 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/SAuthorizeLoginManager/SAuthorizeLoginManager/Channels/Sina/libWeiboSDK",
 					"$(PROJECT_DIR)/SAuthorizeLoginManager/SAuthorizeLoginManager/Channels/WX/WXSDK",
+				);
+				OTHER_LDFLAGS = (
+					"-fobjc-arc",
+					"-ObjC",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.suncloud.wedding;
 				PRODUCT_NAME = "$(TARGET_NAME)";

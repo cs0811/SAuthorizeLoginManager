@@ -10,5 +10,4 @@
 
 @interface SAuthorizeLoginHandle_QQ : SAuthorizeLoginBaseHandle
 
-
 @end
