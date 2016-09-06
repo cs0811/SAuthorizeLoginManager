@@ -20,6 +20,7 @@ typedef NS_ENUM(NSInteger,SAuthorizeLoginType) {
     SAuthorizeLoginType_Failed_NoNetWork ,          // 登录失败，失去网络链接
     SAuthorizeLoginType_Failed_NoAccessToken ,      // 登录失败，没获取到token
     SAuthorizeLoginType_Failed_UnKnown ,            // 登录失败，未知原因
+    SAuthorizeLoginType_Failed_GetUserInfo ,        // 登录失败，获取个人信息失败
     SAuthorizeLoginType_Failed_NoChannel ,          // 登录失败，渠道不存在
     SAuthorizeLoginType_Failed_HandleOpenURLNil ,   // 登录失败，渠道不存在
 };

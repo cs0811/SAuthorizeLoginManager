@@ -12,6 +12,7 @@
 
 static SAuthorizeLoginHandle_QQ * qq;
 static TencentOAuth * tencentOAuth;
+static NSMutableDictionary * _dic;
 static AuthorizeLoginCompletionBlock _resultBlock;
 static AuthorizeLoginCompletionBlock _handleOpenBlock;
 
@@ -28,6 +29,8 @@ static AuthorizeLoginCompletionBlock _handleOpenBlock;
 
 + (void)loginCompletion:(AuthorizeLoginCompletionBlock)completion {
     qq = [SAuthorizeLoginHandle_QQ new];
+    _dic = [NSMutableDictionary dictionary];
+    [_dic setObject:@"qq" forKey:@"channel"];
     tencentOAuth = [[TencentOAuth alloc]initWithAppId:kLogin_QQID andDelegate:qq];
     NSArray * permissions= [NSArray arrayWithObjects:@"get_user_info",@"get_simple_userinfo",@"add_t",nil];
     [tencentOAuth authorize:permissions inSafari:NO];
@@ -47,6 +50,8 @@ static AuthorizeLoginCompletionBlock _handleOpenBlock;
     if (tencentOAuth.accessToken && [tencentOAuth.accessToken length]!=0)
     {
         //  记录登录用户的OpenID、Token以及过期时间
+        [_dic setObject:tencentOAuth.accessToken forKey:@"accessToken"];
+        [_dic setObject:tencentOAuth.openId forKey:@"openId"];
         [tencentOAuth getUserInfo];
     }
     else
@@ -77,8 +82,14 @@ static AuthorizeLoginCompletionBlock _handleOpenBlock;
 
 -(void)getUserInfoResponse:(APIResponse *)response
 {
-    _resultBlock(response.jsonResponse,AuthorizeLoginType_Success);
-    _handleOpenBlock(response.jsonResponse,AuthorizeLoginType_Success);
+    if (!response.jsonResponse || [response.jsonResponse allValues].count<=0) {
+        _resultBlock(response.jsonResponse,AuthorizeLoginType_Failed_GetUserInfo);
+        _handleOpenBlock(response.jsonResponse,AuthorizeLoginType_Failed_GetUserInfo);
+    }else {
+        [_dic addEntriesFromDictionary:response.jsonResponse];
+        _resultBlock(_dic,AuthorizeLoginType_Success);
+        _handleOpenBlock(_dic,AuthorizeLoginType_Success);
+    }
 }
 
 @end

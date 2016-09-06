@@ -11,8 +11,9 @@
 
 
 // key
-#define kLogin_QQID                 @"100370679"
-#define kLogin_WXKey                @"wx9acfc1464c57b9b4"
-#define kLogin_SinaKey              @"2726144177"
+#define kLogin_QQID                     @"100370679"
+#define kLogin_WXID                     @"wx9acfc1464c57b9b4"
+#define kLogin_WXSecret                 @"7ef0bffb6e04b687dead503c8cd83638"
+#define kLogin_SinaKey                  @"2726144177"
 
 #endif /* SAuthorizeLoginInfo_h */

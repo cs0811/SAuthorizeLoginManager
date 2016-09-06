@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D43D95191D7E9DD90046D4AC /* libstdc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D43D95181D7E9DD90046D4AC /* libstdc++.tbd */; };
 		D43D951B1D7EADEE0046D4AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D951A1D7EADEE0046D4AC /* AppDelegate.m */; };
+		D43D95221D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.m in Sources */ = {isa = PBXBuildFile; fileRef = D43D95211D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.m */; };
 		D443AD741D7961F0005832C2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D443AD731D7961F0005832C2 /* main.m */; };
 		D443AD7A1D7961F0005832C2 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D443AD791D7961F0005832C2 /* ViewController.m */; };
 		D443AD7D1D7961F0005832C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D443AD7B1D7961F0005832C2 /* Main.storyboard */; };
@@ -39,6 +40,8 @@
 		D43D95171D7E9B210046D4AC /* SAuthorizeLoginInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAuthorizeLoginInfo.h; sourceTree = "<group>"; };
 		D43D95181D7E9DD90046D4AC /* libstdc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.tbd"; path = "usr/lib/libstdc++.tbd"; sourceTree = SDKROOT; };
 		D43D951A1D7EADEE0046D4AC /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D43D95201D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SAuthorizeLoginHandle_WX.h; sourceTree = "<group>"; };
+		D43D95211D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SAuthorizeLoginHandle_WX.m; sourceTree = "<group>"; };
 		D443AD6F1D7961F0005832C2 /* SAuthorizeLoginManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SAuthorizeLoginManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D443AD731D7961F0005832C2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D443AD751D7961F0005832C2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -237,6 +240,8 @@
 			isa = PBXGroup;
 			children = (
 				D443AD9F1D7962AA005832C2 /* WXSDK */,
+				D43D95201D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.h */,
+				D43D95211D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.m */,
 			);
 			path = WX;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				D43D951B1D7EADEE0046D4AC /* AppDelegate.m in Sources */,
 				D443ADC11D7963D9005832C2 /* SAuthorizeLoginManager.m in Sources */,
 				D443AD741D7961F0005832C2 /* main.m in Sources */,
+				D43D95221D7EB5850046D4AC /* SAuthorizeLoginHandle_WX.m in Sources */,
 				D443ADCA1D796598005832C2 /* SAuthorizeLoginHandle_QQ.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

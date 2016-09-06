@@ -9,6 +9,7 @@
 #import "SAuthorizeLoginManager.h"
 #import "SAuthorizeLoginBaseHandle.h"
 #import "SAuthorizeLoginHandle_QQ.h"
+#import "SAuthorizeLoginHandle_WX.h"
 
 
 @implementation SAuthorizeLoginManager
@@ -48,6 +49,14 @@
         }
     }
 
+    if ([url.absoluteString hasPrefix:[NSString stringWithFormat:@"%@://oauth?code=",kLogin_WXID]]) {
+        if ([SAuthorizeLoginHandle_WX canUsed]) {
+            [SAuthorizeLoginHandle_WX loginHandleOpenURL:url completion:^(NSDictionary *dic, AuthorizeLoginType resultType) {
+                completion(dic,(SAuthorizeLoginType)resultType);
+            }];
+        }
+    }
+    
 }
 
 @end

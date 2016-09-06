@@ -32,7 +32,7 @@
 - (void)show {
     
     [SAuthorizeLoginManager loginWithChanelType:SAuthorizeLoginChannelType_QQ completion:^(NSDictionary *dic, SAuthorizeLoginType reusltType) {
-        NSLog(@" qq - %@ resutl - %ld",dic,reusltType);
+        NSLog(@" wx - %@ resutl - %ld",dic,reusltType);
     }];
     
 }

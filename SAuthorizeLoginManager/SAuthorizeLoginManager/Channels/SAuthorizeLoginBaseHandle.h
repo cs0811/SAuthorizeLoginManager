@@ -7,14 +7,16 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import "SAuthorizeLoginInfo.h"
 
 typedef NS_ENUM(NSInteger,AuthorizeLoginType) {
     AuthorizeLoginType_Success = 0,             // 登录成功
-    AuthorizeLoginType_Failed_UserCancel ,      // 登录失败,用户取消
-    AuthorizeLoginType_Failed_NoNetWork ,       // 登录失败,失去网络链接
+    AuthorizeLoginType_Failed_UserCancel ,      // 登录失败，用户取消
+    AuthorizeLoginType_Failed_NoNetWork ,       // 登录失败，失去网络链接
     AuthorizeLoginType_Failed_NoAccessToken ,   // 登录失败，没获取到token
     AuthorizeLoginType_Failed_UnKnown ,         // 登录失败，未知原因
+    AuthorizeLoginType_Failed_GetUserInfo ,     // 登录失败，获取个人信息失败
 };
 
 typedef void(^AuthorizeLoginCompletionBlock)(NSDictionary * dic, AuthorizeLoginType resultType);
